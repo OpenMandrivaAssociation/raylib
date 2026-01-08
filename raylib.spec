@@ -10,7 +10,6 @@ Summary:	raylib
 URL:		https://www.raylib.com
 License:	zlib
 Group:		System/Libraries	
-BuildRequires:	cmake
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(glfw3)
 BuildRequires:  pkgconfig(x11)
@@ -18,7 +17,6 @@ BuildRequires:  pkgconfig(xcursor)
 BuildRequires:  pkgconfig(xinerama)
 BuildRequires:  pkgconfig(xrandr)
 BuildRequires:  pkgconfig(vulkan)
-BuildRequires:  ninja 
 BuildSystem:	cmake
 BuildOption:	-D BUILD_EXAMPLES=OFF
 BuildOption:	-D BUILD_SHARED_LIBS=ON
@@ -66,7 +64,4 @@ This package contains the headers for development with %{name}
 %{_libdir}/pkgconfig/raylib.pc
 %{_libdir}/cmake/raylib/raylib-config-version.cmake
 %{_libdir}/cmake/raylib/raylib-config.cmake
-
-%prep
-%autosetup -p1
 
